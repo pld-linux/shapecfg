@@ -6,6 +6,7 @@ Release:	4
 License:	GPL
 Group:		Base/Utilities
 Source0:	ftp://ftp.aanet.ru/pub/Linux/system/networking/shaper.36.tar.gz
+# Source0-md5:	fc009b9dfc7b85722c73636c99be9a6b
 Source1:	README.shaper
 Patch0:		shapercfg-2.0.36-glibc.patch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
