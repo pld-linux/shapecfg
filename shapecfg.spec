@@ -30,7 +30,7 @@ kernel.
 %patch0 -p1 -b .glibc
 
 %build
-make CFLAGS="$RPM_OPT_FLAGS"
+%{__make} CFLAGS="$RPM_OPT_FLAGS"
 
 %install
 mkdir -p $RPM_BUILD_ROOT/sbin
