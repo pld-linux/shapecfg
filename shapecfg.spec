@@ -12,7 +12,7 @@ Source1:	README.shaper
 Patch0:		shapercfg-2.0.36-glibc.patch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 Requires:	kernel >= 2.0.36
-ExclusiveArch:	i386
+ExclusiveArch:	%{ix86}
 
 %description
 The Shapecfg program configures and adjusts traffic shaper bandwidth
