@@ -7,7 +7,7 @@ License:	GPL
 Group:		Base/Utilities
 Group(de):	Gründsätzlich/Werkzeuge
 Group(pl):	Podstawowe/Narzêdzia
-Source0:	shaper.36.tar.gz
+Source0:	ftp://ftp.aanet.ru/pub/Linux/system/networking/shaper.36.tar.gz
 Source1:	README.shaper
 Patch0:		shapercfg-2.0.36-glibc.patch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
@@ -26,9 +26,14 @@ supports the shaper module (kernel versions 2.0.36 or later and late
 Install the shapecfg package if you want to set traffic bandwidth
 parameters, and if you have the appropriate kernel.
 
+%description -l pl
+Program shapecfg konfiguruje ograniczenia przepustowo¶ci sieci. Aby
+u¿ywaæ tego pakietu trzeba mieæ j±dro z modu³em ograniczania
+przepustowo¶ci - jest dostêpny od wersji 2.0.36 lub pó¼nych 2.1.x.
+
 %prep
 %setup -q -n shaper
-%patch0 -p1 -b .glibc
+%patch0 -p1
 
 %build
 %{__make} CFLAGS="%{rpmcflags}"
