@@ -42,12 +42,11 @@ install -d $RPM_BUILD_ROOT/sbin
 install -m 755 shapecfg $RPM_BUILD_ROOT/sbin/shapecfg
 
 cp -f %{SOURCE1} .
-gzip -9nf README.shaper
 
 %clean
 rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc README.shaper.gz
+%doc README.shaper
 %attr(755,root,root) /sbin/shapecfg
