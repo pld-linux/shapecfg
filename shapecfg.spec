@@ -1,9 +1,11 @@
-Summary:	A configuration tool for setting traffic bandwidth parameters.
+Summary:	A configuration tool for setting traffic bandwidth parameters
+Summary(pl):	Narzêdzie do konfiguracji przepustowo¶ci sieci
 Name:		shapecfg
 Version:	2.0.36
 Release:	4
 License:	GPL
 Group:		Base/Utilities
+Group(de):	Gründsätzlich/Werkzeuge
 Group(pl):	Podstawowe/Narzêdzia
 Source0:	shaper.36.tar.gz
 Source1:	README.shaper
@@ -29,18 +31,20 @@ parameters, and if you have the appropriate kernel.
 %patch0 -p1 -b .glibc
 
 %build
-%{__make} CFLAGS="$RPM_OPT_FLAGS"
+%{__make} CFLAGS="%{rpmcflags}"
 
 %install
 rm -rf $RPM_BUILD_ROOT
 install -d $RPM_BUILD_ROOT/sbin
-install -s -m 755 shapecfg $RPM_BUILD_ROOT/sbin/shapecfg
+install -m 755 shapecfg $RPM_BUILD_ROOT/sbin/shapecfg
+
+cp -f %{SOURCE1} .
+gzip -9nf README.shaper
 
 %clean
 rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc $RPM_SOURCE_DIR/README.shaper
-%defattr(-,root,root)
-/sbin/shapecfg
+%doc README.shaper.gz
+%attr(755,root,root) /sbin/shapecfg
