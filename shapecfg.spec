@@ -9,9 +9,9 @@ Source0:	ftp://ftp.aanet.ru/pub/Linux/system/networking/shaper.36.tar.gz
 # Source0-md5:	fc009b9dfc7b85722c73636c99be9a6b
 Source1:	README.shaper
 Patch0:		shapercfg-2.0.36-glibc.patch
-BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 Requires:	kernel >= 2.0.36
 ExclusiveArch:	%{ix86}
+BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
 The Shapecfg program configures and adjusts traffic shaper bandwidth
@@ -35,7 +35,8 @@ przepustowo¶ci - jest dostêpny od wersji 2.0.36 lub pó¼nych 2.1.x.
 %patch0 -p1
 
 %build
-%{__make} CFLAGS="%{rpmcflags}"
+%{__make} \
+	CFLAGS="%{rpmcflags}"
 
 %install
 rm -rf $RPM_BUILD_ROOT
