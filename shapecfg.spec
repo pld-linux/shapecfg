@@ -40,7 +40,7 @@ przepustowo¶ci - jest dostêpny od wersji 2.0.36 lub pó¼nych 2.1.x.
 %install
 rm -rf $RPM_BUILD_ROOT
 install -d $RPM_BUILD_ROOT/sbin
-install -m 755 shapecfg $RPM_BUILD_ROOT/sbin/shapecfg
+install shapecfg $RPM_BUILD_ROOT/sbin/shapecfg
 
 cp -f %{SOURCE1} .
 
