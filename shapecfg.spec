@@ -7,7 +7,7 @@ Group: System Environment/Base
 Source: shaper.36.tar.gz
 Source1: README.shaper
 Patch: shapercfg-2.0.36-glibc.patch
-Buildroot: /var/tmp/shaper-root
+BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 Requires: kernel >= 2.0.36
 ExclusiveArch: i386
 
