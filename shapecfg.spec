@@ -5,8 +5,6 @@ Version:	2.0.36
 Release:	4
 License:	GPL
 Group:		Base/Utilities
-Group(de):	Gründsätzlich/Werkzeuge
-Group(pl):	Podstawowe/Narzêdzia
 Source0:	ftp://ftp.aanet.ru/pub/Linux/system/networking/shaper.36.tar.gz
 Source1:	README.shaper
 Patch0:		shapercfg-2.0.36-glibc.patch
