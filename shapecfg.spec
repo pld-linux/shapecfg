@@ -1,5 +1,5 @@
 Summary:	A configuration tool for setting traffic bandwidth parameters
-Summary(pl):	Narzêdzie do konfiguracji przepustowo¶ci sieci
+Summary(pl.UTF-8):   NarzÄ™dzie do konfiguracji przepustowoÅ›ci sieci
 Name:		shapecfg
 Version:	2.0.36
 Release:	4
@@ -25,10 +25,10 @@ supports the shaper module (kernel versions 2.0.36 or later and late
 Install the shapecfg package if you want to set traffic bandwidth
 parameters, and if you have the appropriate kernel.
 
-%description -l pl
-Program shapecfg konfiguruje ograniczenia przepustowo¶ci sieci. Aby
-u¿ywaæ tego pakietu trzeba mieæ j±dro z modu³em ograniczania
-przepustowo¶ci - jest dostêpny od wersji 2.0.36 lub pó¼nych 2.1.x.
+%description -l pl.UTF-8
+Program shapecfg konfiguruje ograniczenia przepustowoÅ›ci sieci. Aby
+uÅ¼ywaÄ‡ tego pakietu trzeba mieÄ‡ jÄ…dro z moduÅ‚em ograniczania
+przepustowoÅ›ci - jest dostÄ™pny od wersji 2.0.36 lub pÃ³Åºnych 2.1.x.
 
 %prep
 %setup -q -n shaper
