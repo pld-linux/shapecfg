@@ -1,5 +1,5 @@
 Summary:	A configuration tool for setting traffic bandwidth parameters
-Summary(pl.UTF-8):   Narzędzie do konfiguracji przepustowości sieci
+Summary(pl.UTF-8):	Narzędzie do konfiguracji przepustowości sieci
 Name:		shapecfg
 Version:	2.0.36
 Release:	4
